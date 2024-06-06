@@ -110,8 +110,11 @@ source devel/setup.bash
 roslaunch orb_slam3_ros tello.launch
 ```
 For this you need to change the sim_time parameter to "true" in the tello.launch file:
+
 param name="use_sim_time" value="true"
+
 This way you ensure rosbag plays the video feed correctly according to the timestamps instead of using the computers own clock
+
 In Terminal 3:
 ```
 cd ~/catkin_ws/rosbags
